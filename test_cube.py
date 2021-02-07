@@ -1,19 +1,16 @@
 import unittest
-import In_Class_Activity
+import cube
 
 class TestCase(unittest.TestCase):
 
-	def test_add(self):
-		self.assertEqual(In_Class_Activity.add(2, 1), 3)
+	def test_cube1(self):
+		self.assertEqual(cube.Cube(2), 8)
 
-	def test_sub(self):
-		self.assertEqual(In_Class_Activity.sub(3, 1), 2)
+	def test_cube2(self):
+		self.assertEqual(cube.Cube(-3), -27)
 
-	def test_mul(self):
-		self.assertEqual(In_Class_Activity.mul(3, 2), 6)
-
-	def test_div(self):
-		self.assertEqual(In_Class_Activity.div(6, 2), 3)
+	def test_cube3(self):
+		self.assertEqual(cube.Cube("l"), None)
 
 if __name__ == '__main__':
 	unittest.main(verbosity=2)
