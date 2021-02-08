@@ -1,7 +1,9 @@
 def Full_name(fname, lname):
 	try:
-		return fname + " " + lname
-	except TypeError:
+		if (fname.isalpha() == True) and (lname.isalpha() == True) :
+			# return None
+			return fname + " " + lname
+	except :
 		return None
 
 
