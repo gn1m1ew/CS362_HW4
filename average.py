@@ -1,5 +1,8 @@
 def Average(lst):
 	try:
+		if not lst:
+			print("The list is empty")
+			return None
 		return sum(lst) / len(lst)
 		# if str in lst:
 		# 	print("Invalid elements in the list")

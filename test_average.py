@@ -12,5 +12,8 @@ class TestCase(unittest.TestCase):
 	def test_average3(self):
 		self.assertEqual(average.Average([1, 2, 3, 'l']), None)
 
+	def test_average4(self):
+		self.assertEqual(average.Average([]), None)
+
 if __name__ == '__main__':
 	unittest.main(verbosity=2)

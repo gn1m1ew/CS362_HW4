@@ -10,7 +10,7 @@ class TestCase(unittest.TestCase):
 		self.assertEqual(full_name.Full_name("Ming1", "Wei1"), None)
 
 	def test_full_name3(self):
-		self.assertEqual(full_name.Full_name("Cathy", "Du"), "Cathy Du")
+		self.assertEqual(full_name.Full_name("Ming#", "Wei"), None)
 
 if __name__ == '__main__':
 	unittest.main(verbosity=2)
